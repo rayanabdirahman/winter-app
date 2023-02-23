@@ -14,7 +14,12 @@ const Button: React.FC<Props> = ({
   const bgColor =
     styleType === "primary" ? colors.neutral.black800 : colors.brand.brand500;
   return (
-    <NBButton {...props} style={{ backgroundColor: bgColor }} size="lg">
+    <NBButton
+      {...props}
+      style={{ backgroundColor: bgColor }}
+      size="lg"
+      borderRadius="lg"
+    >
       {children}
     </NBButton>
   );
