@@ -6,6 +6,7 @@ import PasswordScreen from "../../screens/auth/signin/Password";
 import CreatePasswordScreen from "../../screens/auth/signup/CreatePassword";
 import NameScreen from "../../screens/auth/signup/Name";
 import UsernameScreen from "../../screens/auth/signup/Username";
+import colors from "../../lib/theme/colors";
 
 const Stack = createStackNavigator<AuthStackParamList>();
 
@@ -15,7 +16,7 @@ export default function AuthNavigator() {
       initialRouteName={AuthStackScreenNames.EMAIL}
       screenOptions={{
         headerTitle: "",
-        headerTintColor: "black",
+        headerTintColor: colors.neutral.black900,
         headerLeftContainerStyle: { paddingLeft: 20 },
         headerBackTitle: " ",
         headerShadowVisible: false,

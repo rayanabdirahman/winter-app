@@ -1,13 +1,13 @@
 import React from "react";
+import { NativeBaseProvider } from "native-base";
 import { StatusBar } from "expo-status-bar";
-import { SafeAreaView } from "react-native";
 import Navigation from "./src/navigation";
 
 const App = () => (
-  <SafeAreaView style={{ flex: 1 }}>
+  <NativeBaseProvider>
     <Navigation />
     <StatusBar style="auto" />
-  </SafeAreaView>
+  </NativeBaseProvider>
 );
 
 const BootstrapApp = () => <App />;
