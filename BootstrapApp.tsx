@@ -1,24 +1,14 @@
 import React from "react";
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import { SafeAreaView } from "react-native";
+import Navigation from "./src/navigation";
 
 const App = () => (
-  <View style={styles.container}>
-    <Text>
-      Open up App.js to start working on your app coming from bootstrap app!
-    </Text>
+  <SafeAreaView style={{ flex: 1 }}>
+    <Navigation />
     <StatusBar style="auto" />
-  </View>
+  </SafeAreaView>
 );
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
 
 const BootstrapApp = () => <App />;
 
