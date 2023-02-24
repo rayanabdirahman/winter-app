@@ -2,7 +2,7 @@ import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import { AuthStackParamList, AuthStackScreenNames } from "./types";
 import EmailScreen from "../../screens/auth/Email";
-import PasswordScreen from "../../screens/auth/signin/Password";
+import SignInScreen from "../../screens/auth/SignIn";
 import CreatePasswordScreen from "../../screens/auth/signup/CreatePassword";
 import NameScreen from "../../screens/auth/signup/Name";
 import UsernameScreen from "../../screens/auth/signup/Username";
@@ -24,8 +24,8 @@ export default function AuthNavigator() {
     >
       <Stack.Screen name={AuthStackScreenNames.EMAIL} component={EmailScreen} />
       <Stack.Screen
-        name={AuthStackScreenNames.SIGN_IN_PASSWORD}
-        component={PasswordScreen}
+        name={AuthStackScreenNames.SIGN_IN}
+        component={SignInScreen}
       />
       <Stack.Screen
         name={AuthStackScreenNames.SIGN_UP_CONFIRM_EMAIL}
